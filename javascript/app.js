@@ -1,10 +1,11 @@
 let contador = 0
-let sorte = parseInt(Math.random() * 9 + (1))// 0 a 9
+
 
 addEventListener("click", (e) => {
     let num = e.target.id
+    let sorte = parseInt(Math.random() * 9 + (1))// 0 a 9
     const div = document.getElementById(num);
-    if (contador < 3) {
+        if (contador < 3) {
         //div.style.border = '2px solid black';
         if (num == sorte) {
             div.style.backgroundColor = 'rgb(10 200 20)';
