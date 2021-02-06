@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    
+}
+header{    
+    padding:5% ;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: rgb(10 200 20);
+    border:4px solid black;
+    margin-bottom: 5%;
+}
+.container{
+       
+      height: 60%;
+    margin:  auto;  
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;   
+
+}
+
+.div_content{
+    display: flex;    
+    justify-content: center;
+    align-items: center;    
+    background-color: rgb(100 100 250);
+    font-size: 2rem;
+    margin: 2px;
+}
+.div_content img{
+    width: 80%;
+}
