@@ -1,16 +1,20 @@
 let contador = 0
 
-
 addEventListener("click", (e) => {
     let num = e.target.id
     let sorte = parseInt(Math.random() * 9 + (1))// 0 a 9
     const div = document.getElementById(num);
-        if (contador < 3) {
+
+    if (contador < 3) {
         //div.style.border = '2px solid black';
         if (num == sorte) {
             div.style.backgroundColor = 'rgb(10 200 20)';
-            alert("parabens!!! você ganhou")
-            zerar()
+            setTimeout(() => {
+                alert("parabens!!! você ganhou")
+                zerar()
+
+            }, 1)
+
 
         }
         else {
@@ -20,9 +24,12 @@ addEventListener("click", (e) => {
         }
     }
     else {
+
         div.style.backgroundColor = 'red';
-        alert("nao foi dessa vez!!!")
-        zerar()
+        setTimeout(() => {
+            alert("nao foi dessa vez!!!")
+            zerar()
+        }, 2)
     }
 })
 
